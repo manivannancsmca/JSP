@@ -1,0 +1,5 @@
+One way to display all images in JSP looks like this this:
+<c:forEach items="${vehicles}" var="v">
+    <img src="data:image/jpg;base64, <c:out value='${v.encodedImage}'/>"
+        width="214" height="138" />
+</c:forEach>
